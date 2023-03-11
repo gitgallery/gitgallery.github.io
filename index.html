@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>GitStore</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://gitgallery.github.io/css/style.css">
+		<link rel="icon" type="image/svg+xml" href="https://gitgallery.github.io/favicon/favicon.svg">
+		<link rel="icon" type="image/png" href="https://gitgallery.github.io/favicon/favicon.png">
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<a href="https://gitgallery.github.io">
+					<svg
+						version="1.1"
+						xmlns="http://www.w3.org/2000/svg"
+						x="0%" y="0%"
+						viewBox="212.3 135.26 464.27 487.1">
+						<path
+							fill="#FF0054"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="7.2"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M581.23,547.01Q394.42,-53.03,215.90,237.70Q394.42,-53.03,672.97,511.39Q650.40,581.82,581.23,547.01z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="2.16"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M554.94,446.89L620.69,447.03L549.04,411.20L614.79,411.35"/>
+						<path
+							fill="#D00044"
+							stroke="#000000"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="2.16"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M531.06,393.99L596.81,394.14L525.16,358.31L590.91,358.45"/>
+						<path
+							fill="#FF0054"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="7.2"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M581.23,210.61Q394.42,810.65,215.90,519.92Q394.42,810.65,672.97,246.24Q650.40,175.80,581.23,210.61z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M466.48,520.84C472.20,520.84,476.83,525.47,476.83,531.19C476.83,536.90,472.20,541.54,466.48,541.54C460.76,541.54,456.13,536.90,456.13,531.19C456.13,525.47,460.76,520.84,466.48,520.84z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M596.86,220.22C602.57,220.22,607.21,224.86,607.21,230.57C607.21,236.29,602.57,240.92,596.86,240.92C591.14,240.92,586.51,236.29,586.51,230.57C586.51,224.86,591.14,220.22,596.86,220.22z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M646.92,230.57C652.64,230.57,657.27,235.21,657.27,240.92C657.27,246.64,652.64,251.27,646.92,251.27C641.21,251.27,636.57,246.64,636.57,240.92C636.57,235.21,641.21,230.57,646.92,230.57z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M586.51,252.11C592.22,252.11,596.86,256.75,596.86,262.46C596.86,268.18,592.22,272.81,586.51,272.81C580.79,272.81,576.16,268.18,576.16,262.46C576.16,256.75,580.79,252.11,586.51,252.11z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M636.57,262.46C642.29,262.46,646.92,267.10,646.92,272.81C646.92,278.53,642.29,283.16,636.57,283.16C630.86,283.16,626.22,278.53,626.22,272.81C626.22,267.10,630.86,262.46,636.57,262.46z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M576.16,284.19C581.87,284.19,586.51,288.83,586.51,294.54C586.51,300.26,581.87,304.89,576.16,304.89C570.44,304.89,565.81,300.26,565.81,294.54C565.81,288.83,570.44,284.19,576.16,284.19z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M620.61,294.54C626.32,294.54,630.96,299.17,630.96,304.89C630.96,310.61,626.32,315.24,620.61,315.24C614.89,315.24,610.26,310.61,610.26,304.89C610.26,299.17,614.89,294.54,620.61,294.54z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M565.81,313.62C571.52,313.62,576.16,318.26,576.16,323.97C576.16,329.69,571.52,334.32,565.81,334.32C560.09,334.32,555.46,329.69,555.46,323.97C555.46,318.26,560.09,313.62,565.81,313.62z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M603.74,323.97C609.46,323.97,614.09,328.61,614.09,334.32C614.09,340.04,609.46,344.67,603.74,344.67C598.03,344.67,593.39,340.04,593.39,334.32C593.39,328.61,598.03,323.97,603.74,323.97z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M555.46,341.83C561.17,341.83,565.81,346.46,565.81,352.18C565.81,357.89,561.17,362.53,555.46,362.53C549.74,362.53,545.11,357.89,545.11,352.18C545.11,346.46,549.74,341.83,555.46,341.83z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M584.86,341.83C590.58,341.83,595.21,346.46,595.21,352.18C595.21,357.89,590.58,362.53,584.86,362.53C579.15,362.53,574.52,357.89,574.52,352.18C574.52,346.46,579.15,341.83,584.86,341.83z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M545.11,369.78C550.82,369.78,555.46,374.41,555.46,380.13C555.46,385.84,550.82,390.48,545.11,390.48C539.39,390.48,534.76,385.84,534.76,380.13C534.76,374.41,539.39,369.78,545.11,369.78z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M574.52,369.78C580.23,369.78,584.86,374.41,584.86,380.13C584.86,385.84,580.23,390.48,574.52,390.48C568.80,390.48,564.17,385.84,564.17,380.13C564.17,374.41,568.80,369.78,574.52,369.78z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M534.52,399.26C540.23,399.26,544.87,403.90,544.87,409.61C544.87,415.33,540.23,419.96,534.52,419.96C528.80,419.96,524.17,415.33,524.17,409.61C524.17,403.90,528.80,399.26,534.52,399.26z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M565.81,399.83C571.52,399.83,576.16,404.47,576.16,410.18C576.16,415.90,571.52,420.53,565.81,420.53C560.09,420.53,555.46,415.90,555.46,410.18C555.46,404.47,560.09,399.83,565.81,399.83z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M545.11,429.12C550.82,429.12,555.46,433.75,555.46,439.47C555.46,445.18,550.82,449.82,545.11,449.82C539.39,449.82,534.76,445.18,534.76,439.47C534.76,433.75,539.39,429.12,545.11,429.12z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M516.59,429.12C522.30,429.12,526.93,433.75,526.93,439.47C526.93,445.18,522.30,449.82,516.59,449.82C510.87,449.82,506.24,445.18,506.24,439.47C506.24,433.75,510.87,429.12,516.59,429.12z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M516.59,456.52C522.30,456.52,526.93,461.15,526.93,466.86C526.93,472.58,522.30,477.21,516.59,477.21C510.87,477.21,506.24,472.58,506.24,466.86C506.24,461.15,510.87,456.52,516.59,456.52z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M495.72,477.32C501.44,477.32,506.07,481.95,506.07,487.67C506.07,493.38,501.44,498.02,495.72,498.02C490.00,498.02,485.37,493.38,485.37,487.67C485.37,481.95,490.00,477.32,495.72,477.32z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="1.7980579"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M485.37,503.02C491.09,503.02,495.72,507.66,495.72,513.37C495.72,519.09,491.09,523.72,485.37,523.72C479.65,523.72,475.02,519.09,475.02,513.37C475.02,507.66,479.65,503.02,485.37,503.02z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="2.16"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M581.02,504.19L646.77,504.33L575.11,468.51L640.87,468.65"/>
+						<path
+							fill="#000000"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="0.80243623"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M525.54,358.45C525.90,358.45,526.20,358.74,526.20,359.10C526.20,359.46,525.90,359.75,525.54,359.75C525.18,359.75,524.89,359.46,524.89,359.10C524.89,358.74,525.18,358.45,525.54,358.45z"/>
+						<path
+							fill="#D00044"
+							stroke="#E3E3E3"
+							fill-opacity="1.000"
+							stroke-opacity="1.000"
+							fill-rule="nonzero"
+							stroke-width="2.16"
+							stroke-linejoin="miter"
+							stroke-linecap="square"
+							d="M420.05,172.63L476.31,219.55L525.89,358.34"/>
+					</svg>
+				</a>
+			</div>
+			
+			<nav role="navigation" oncontextmenu="return false">
+				<div id="menuToggle">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul id="menu">
+				<div class="flec">
+					<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+		 viewBox="1064.7701 445.5539 419.8101 717.0565">
+						<polygon fill="none" points="1283.1857,1127.3097 1406.1421,1077.6322 1314.2406,850.1678 1463.913,852.7823 1093.4828,480.8547 
+							1085.4374,1005.6964 1191.2842,899.8454 " stroke="#303030" stroke-width="40px"/>
+					</svg>
+
+			</div>
+				<a href="#"><li>English</li></a>
+				<li class="selectLang">Türkçe</li>
+				<br>
+				<hr style="background-color: #E3E3E3; border: 2px solid #E3E3E3; border-radius: 2px">
+				<br>
+				<a href="#"><li>Uygulama arama</li></a>
+				<a href="#"><li>Contact</li></a>
+				<a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+				</ul>
+			</div>
+			</nav>
+		</header>
+		
+		<article>
+			<h1 style="text-align: center">Sitemiz geliştirme aşamasındadır. Kaydedip ziyaret etmeyi unutmayın!</h1>
+			<br>
+			<div class="popular-list">
+				<h1 class="align-cn">Popüler oyunlar</h1>
+				<hr style="background-color: #E3E3E3; border: 2px solid #E3E3E3; border-radius: 2px">
+				<br>
+				<!--ApNameList-->
+				<div class="appName">
+					<a href="http://exapmple.com">
+						<img src="./appNameSubwaySurfes.webp" alt="appNameSubwaySurfes" width="100%">
+					</a>
+					<br>
+					<p>Subway Surfes</p>
+				</div>
+				
+				<div class="appName">
+					<a href="http://exapmple.com">
+						<img src="./appNameBeachBuggyRacing.webp" alt="appNameBeachBuggyRacing" width="100%">
+					</a>
+					<br>
+					<p>Beach Buggy Racing</p>
+				</div>
+				
+				
+				<div class="appName">
+					<a href="#">
+						<img src="./appNameClashOfClans.webp" alt="appNameClashOfClans" width="100%">
+					</a>
+					<br>
+					<p>Clash Of Clans</p>
+				</div>
+				
+				
+				<div class="appName">
+					<a href="#">
+						<img src="./appNameSmashHit.webp" alt="appNameSmashHit" width="100%">
+					</a>
+					<br>
+					<p>Smash Hit</p>
+				</div>
+				
+				
+				<div class="appName">
+					<a href="#">
+						<img src="appNameCandyCrushSaga.webp" alt="appNameCandyCrushSaga" width="100%">
+					</a>
+						<br>
+						<p>Candy Crush Saga</p>
+					</a>
+				</div>
+				
+			</div>
+		</article>
+	</body>
+</html>
