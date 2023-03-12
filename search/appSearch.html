@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 	<head>
 		<meta charset="UTF-8">
 		<title>Uygulama Arama</title>
@@ -360,7 +360,7 @@
 				<script>
 					function searchApp() {
 						const searchBox = document.getElementById('searchBox');
-						const keyword = searchBox.value.replace(/\s+/g, '');
+						const keyword = searchBox.value.toLowerCase().replace(/\s+/g, '');
 						const url = `https://gitgallery.github.io/app/appName${keyword}`;
 						window.location.href = url;
 					}
